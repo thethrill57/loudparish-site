@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Loud Parish — Coming Soon | Think Loud Recording Artists</title>
-<meta name="description" content="Loud Parish — Think Loud Recording Artists. Something loud is coming.">
+<title>Loud Parish — First Single "Still Got More" Out Nov 20 | Think Loud Recording Artists</title>
+<meta name="description" content="Loud Parish — Think Loud Recording Artists. First single Still Got More out November 20, 2026.">
 <meta name="theme-color" content="#0a0707">
-<meta property="og:title" content="Loud Parish — Coming Soon">
-<meta property="og:description" content="Something loud is coming. Think Loud Recording Artists.">
-<meta property="og:image" content="https://loudparish.com/hero.jpg">
+<meta property="og:title" content="Loud Parish — Still Got More, out Nov 20">
+<meta property="og:description" content="First single Still Got More, out November 20. Think Loud Recording Artists.">
+<meta property="og:image" content="https://loudparish.com/still-got-more.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
@@ -37,6 +37,10 @@
   button:hover{background:var(--amber);color:#150a05}
   button:active{transform:translateY(1px)}
   .note{margin-top:.7rem;font-size:.8rem;color:var(--muted);letter-spacing:.08em}
+  .single{margin-top:1.6rem;display:flex;flex-direction:column;align-items:center;gap:.9rem}
+  .single img{width:min(300px,72vw);height:auto;border:1px solid #2a1c19;box-shadow:0 10px 40px rgba(0,0,0,.7),0 0 30px rgba(211,36,27,.25)}
+  .title{font-family:'Anton','Impact',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(1.6rem,4.5vw,2.4rem);color:#f4ece3}
+  .date{font-weight:500;letter-spacing:.3em;text-transform:uppercase;font-size:clamp(.85rem,2.2vw,1.05rem);color:var(--amber)}
   footer{padding:1.2rem 1rem 1.5rem;text-align:center;font-size:.78rem;letter-spacing:.1em;color:#7d726a;background:var(--bg);border-top:1px solid #1d1412}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
   @media (max-width:520px){
@@ -48,7 +52,7 @@
     button{padding:.95rem}
   }
   @media (prefers-reduced-motion:no-preference){
-    h1,.sub,.soon,.tag,form{animation:rise .9s ease-out both}
+    h1,.sub,.soon,.tag,.single,form{animation:rise .9s ease-out both}
     .sub{animation-delay:.1s}.soon{animation-delay:.2s}.tag{animation-delay:.25s}form{animation-delay:.35s}
     @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
   }
@@ -60,8 +64,12 @@
     <h1>Loud <span>Parish</span></h1>
     <p class="sub">Think Loud Recording Artists</p>
     <div class="rule" aria-hidden="true"></div>
-    <p class="soon">Coming Soon</p>
-    <p class="tag">Something loud is coming.</p>
+    <p class="soon">First Single</p>
+    <div class="single">
+      <img src="still-got-more.jpg" alt="Loud Parish — Still Got More cover art" width="900" height="900">
+      <p class="title">Still Got More</p>
+      <p class="date">Out November 20, 2026</p>
+    </div>
   </main>
   <footer>© 2026 Think Loud Studios, LLC</footer>
 </body>
