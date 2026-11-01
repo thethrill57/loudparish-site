@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loud Parish — Coming Soon | Think Loud Recording Artists</title>
+<meta name="description" content="Loud Parish — Think Loud Recording Artists. Something loud is coming.">
+<meta name="theme-color" content="#0a0707">
+<meta property="og:title" content="Loud Parish — Coming Soon">
+<meta property="og:description" content="Something loud is coming. Think Loud Recording Artists.">
+<meta property="og:image" content="https://loudparish.com/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--amber:#ff9a1f;--red:#d3241b;--bg:#0a0707;--text:#efe7de;--muted:#a69b90}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--text)}
+  body{font-family:'Oswald','Arial Narrow',sans-serif;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow-x:hidden}
+  .hero{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 1.25rem 2.5rem;min-height:720px;isolation:isolate}
+  .hero::before{content:"";position:absolute;top:0;left:0;right:0;height:64%;z-index:-2;background:url(hero.jpg) center 52%/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(to bottom,rgba(10,7,7,.55) 0%,rgba(10,7,7,0) 12%,rgba(10,7,7,0) 40%,var(--bg) 64%)}
+  .label{font-weight:500;letter-spacing:.42em;text-transform:uppercase;font-size:clamp(.7rem,1.6vw,.9rem);color:var(--amber);position:absolute;top:1.5rem;left:0;right:0;text-shadow:0 0 12px rgba(0,0,0,.8)}
+  h1{font-family:'Anton','Impact','Arial Narrow Bold',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.02em;
+    font-size:clamp(3.6rem,12vw,9.5rem);color:#f4ece3;text-shadow:0 0 40px rgba(211,36,27,.55),0 4px 0 rgba(0,0,0,.6)}
+  h1 span{color:var(--red)}
+  .sub{margin-top:.9rem;font-weight:500;letter-spacing:.38em;text-transform:uppercase;font-size:clamp(.8rem,2.2vw,1.15rem);color:var(--text)}
+  .rule{width:64px;height:3px;background:linear-gradient(90deg,var(--red),var(--amber));margin:1.6rem auto 1.4rem}
+  .soon{font-family:'Anton','Impact',sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:clamp(1.1rem,3vw,1.7rem);color:var(--amber)}
+  .tag{margin-top:.4rem;color:var(--muted);font-size:clamp(1rem,2.4vw,1.25rem);letter-spacing:.06em}
+  form{margin:1.8rem auto 0;display:flex;gap:.5rem;width:100%;max-width:480px}
+  input[type=email]{flex:1;min-width:0;padding:.95rem 1rem;background:rgba(15,10,10,.85);border:1px solid #3a2a26;border-radius:2px;color:var(--text);font:inherit;font-size:1rem;letter-spacing:.04em}
+  input[type=email]::placeholder{color:#7d726a}
+  input[type=email]:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 2px rgba(255,154,31,.25)}
+  button{padding:.95rem 1.4rem;background:var(--red);color:#fff;border:0;border-radius:2px;font-family:'Anton','Impact',sans-serif;letter-spacing:.14em;text-transform:uppercase;font-size:1rem;cursor:pointer;transition:background .15s,transform .15s}
+  button:hover{background:var(--amber);color:#150a05}
+  button:active{transform:translateY(1px)}
+  .note{margin-top:.7rem;font-size:.8rem;color:var(--muted);letter-spacing:.08em}
+  footer{padding:1.2rem 1rem 1.5rem;text-align:center;font-size:.78rem;letter-spacing:.1em;color:#7d726a;background:var(--bg);border-top:1px solid #1d1412}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  @media (max-width:520px){
+    .hero{min-height:680px;padding-bottom:2rem}
+    .hero::before{height:56%;background-position:50% 50%;background-size:auto 100%;background-color:var(--bg)}
+    .hero::after{background:linear-gradient(to bottom,rgba(10,7,7,.5) 0%,rgba(10,7,7,0) 14%,rgba(10,7,7,0) 40%,rgba(10,7,7,.9) 56%,var(--bg) 70%)}
+    .sub{letter-spacing:.24em}
+    form{flex-direction:column}
+    button{padding:.95rem}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    h1,.sub,.soon,.tag,form{animation:rise .9s ease-out both}
+    .sub{animation-delay:.1s}.soon{animation-delay:.2s}.tag{animation-delay:.25s}form{animation-delay:.35s}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+  <main class="hero">
+    <p class="label">Think Loud</p>
+    <h1>Loud <span>Parish</span></h1>
+    <p class="sub">Think Loud Recording Artists</p>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="soon">Coming Soon</p>
+    <p class="tag">Something loud is coming.</p>
+
+    <!-- TODO: signup is front-end only. Replace action with a real backend
+         (Mailchimp / Formspree / ConvertKit / etc.). The mailto below is a
+         placeholder and opens the visitor's email client; swap before launch. -->
+    <form action="mailto:TODO@loudparish.com" method="post" enctype="text/plain">
+      <label class="sr" for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+      <button type="submit">Notify Me</button>
+    </form>
+    <p class="note">Be the first to hear it.</p>
+  </main>
+  <footer>© 2026 Think Loud Studios, LLC</footer>
+</body>
+</html>
